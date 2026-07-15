@@ -64,7 +64,7 @@ This project analyzes the **Olist Brazilian E-Commerce** public dataset from Kag
 | Metric | Value |
 |---|---|
 | Average Review Score | **4.0 / 5** |
-| Positive Reviews (4–5★) | **85.37%** |
+| Positive Reviews (3–5★) | **85.37%** |
 | Total Reviews Collected | **98K** |
 | Sales per Customer | **$136.68** |
 
