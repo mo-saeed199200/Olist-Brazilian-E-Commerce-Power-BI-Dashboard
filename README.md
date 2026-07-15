@@ -238,7 +238,7 @@ In almost every other state (AC, PR, MG, SP...), the seller's shipping lateness 
 ---
 
 ### 4. At the state level, identical delivery times can produce opposite satisfaction — an open question
-AP (27 days) scores **4.20** (highest); RR (29.85 days) scores **3.58** (lowest) — nearly the same wait, opposite outcomes. Delivery time alone doesn't fully explain regional satisfaction; this is flagged as an open question rather than forced into a tidy explanation the data doesn't support.
+AP (67 customers) and (27 days) scores **4.20** (highest); RR (45 customers) and (29.85 days) scores **3.58** (lowest) — nearly the same wait, opposite outcomes. Delivery time alone doesn't fully explain regional satisfaction; this is flagged as an open question rather than forced into a tidy explanation the data doesn't support.
 
 ---
 
