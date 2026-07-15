@@ -194,9 +194,9 @@ Now combine both lenses using AL's own confirmed numbers:
 | informatica_acessorios | 6,689 | $912K | 4.03 |
 | moveis_decoracao | 6,449 | $730K | 4.01 |
 | relogios_presentes | 5,624 | $1.21M | 4.07 |
-| cds_dvds_musicais | low volume | — | **4.67** (highest score overall) |
-| moveis_escritorio | 1,273 | — | **3.62** (lowest with reliable sample) |
-| seguros_e_servicos | **2 only** | — | 2.50 ⚠️ (excluded — sample too small) |
+| cds_dvds_musicais | 730 | $730 | **4.67** (highest score overall) |
+| moveis_escritorio | 1,273 | $273,961 | **3.62** (lowest with reliable sample) |
+| seguros_e_servicos | **2 only** | $283 | 2.50 ⚠️ (excluded — sample too small) |
 
 ---
 
