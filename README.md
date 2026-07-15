@@ -173,7 +173,7 @@ Now combine both lenses using AL's own confirmed numbers:
 | State | Revenue | Orders | Review Score | Delivery Time |
 |---|---|---|---|---|
 | **SP** | $5.03M (37% of total) | 39,938 | 4.17 | **9 days** (fastest) |
-| RJ | $1.76M | 12,284 | — | 15.23 |
+| RJ | $1.76M | 12,284 | 3.88 | 15.23 |
 | MG | $1.54M | 11,162 | 4.14 | 11.94 |
 | **AP** | ~$13.3K | ~67 | **4.20** (highest) | 27 |
 | **AC** | ~$15.2K | 77 | 4.18 | 20 |
