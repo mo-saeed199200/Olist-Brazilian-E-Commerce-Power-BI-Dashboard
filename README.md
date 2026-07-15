@@ -154,12 +154,15 @@ Looking at Late Shipment % **on its own**, the picture is very different — muc
 
 ### 🧩 Putting it together: the full Alagoas (AL) story
 
-Now combine both lenses:
+Now combine both lenses using AL's own confirmed numbers:
 
-| Metric | AL | "Typical" gap pattern elsewhere (Late Shipment usually 3–5 pts *higher* than Delayed) | Expected Delayed % if AL followed the typical pattern | Actual Delayed % | Unexplained excess |
-|---|---|---|---|---|---|
-| Late Shipment | 12.33% | — | — | — | — |
-| Delayed Orders | 23.12% | Delayed should be *lower* than 12.33% | ~8–12% | **23.12%** | **≈ +11–15 points** |
+| Step | Value |
+|---|---|
+| AL's Late Shipment % (the reference point — how late sellers actually ship) | 12.33% |
+| Typical pattern elsewhere: Late Shipment is usually 3–5 pts *higher* than Delayed (buffer absorbs seller delay) | e.g. SP: 9.32% Late vs 5.80% Delayed |
+| **If AL followed that same typical pattern**, its Delayed % should have landed *below* 12.33% | Expected: **~8–12%** |
+| AL's **actual** Delayed Orders % | **23.12%** |
+| **Unexplained excess** (Actual − Expected) | **≈ +11–15 percentage points** |
 
 **So what:** Even if AL's sellers behaved exactly like the platform average (12.33% late shipment, roughly in line with RN/MS), the "typical" logistics buffer seen everywhere else would predict a Delayed rate somewhere around 8–12%, similar to RN/MS/TO. Instead, AL's actual Delayed rate is **23.12%** — an excess of roughly **11–15 percentage points that seller behavior does not explain at all**. This gap is the real fingerprint of a last-mile/carrier problem unique to Alagoas: not sellers shipping late, but something breaking down specifically in the journey between the carrier pickup and the customer's door in that state. This is why the recommendation is a **logistics-partner audit**, not seller pressure — pushing AL's sellers to ship earlier would not meaningfully move the Delayed Orders number.
 
@@ -206,7 +209,7 @@ Now combine both lenses:
 | Pattern | Late Shipment % > Delayed % | **Delayed % (23.12%) is nearly 2x Late Shipment % (12.33%)** |
 | Meaning | Seller delays get absorbed before reaching the customer | Even orders shipped **on time** still arrive late |
 
-In almost every other state (AC, PR, MG, SP...), the seller's shipping lateness is *higher* than what the customer actually experiences — meaning Olist's logistics network has real buffer built in. **Alagoas breaks that pattern entirely.** Its Delayed Orders rate is nearly **double** its Late Shipment rate, which means the failure is happening **after** the seller ships, not because of the seller. RR, TO, and MS show the same directional pattern on a smaller scale (see full breakdown table below).
+In almost every other state (AC, PR, MG, SP...), the seller's shipping lateness is *higher* than what the customer actually experiences — meaning Olist's logistics network has real buffer built in. **Alagoas breaks that pattern entirely.** Its Delayed Orders rate is nearly **double** its Late Shipment rate, which means the failure is happening **after** the seller ships, not because of the seller. RR, TO, and MS show the same directional pattern on a smaller scale (see the full state-by-state breakdown, standalone Delayed/Late Shipment analysis, and the complete AL walkthrough in the section titled *"🚚 Delayed Orders & Late Shipment — Full State Breakdown"* earlier in this document).
 
 **So what:** Fixing AL is not about pressuring sellers to ship faster — it's about auditing the **carrier/last-mile logistics partner** operating in that region specifically. This is the single clearest, most actionable operational insight in the entire dataset.
 
@@ -306,6 +309,36 @@ Credit card AOV ($163) vs. voucher AOV ($66), while credit card is also the domi
 
 ---
 
+## 📍 Case Study: Alagoas (AL) — Anatomy of a Logistics Failure
+
+*This section pulls every AL-related finding from across the dashboard into one standalone narrative, since it's the single most actionable operational discovery in this analysis.*
+
+### The headline number
+Alagoas has a **23.12% Delayed Orders rate** — nearly **double** the second-worst state (TO, 12.55%) and roughly **9x** the best-performing state (AC, 2.60%). This alone marks AL as a categorical outlier, not a gradually weaker region.
+
+### Ruling out the obvious suspect: sellers
+The first assumption would be "AL's sellers ship late." The data says otherwise:
+
+| Metric | AL | Platform pattern |
+|---|---|---|
+| Late Shipment % (seller misses their own deadline) | 12.33% | Highest in Brazil, but only moderately above RN (10.27%) — a **~2.5x** spread across all states |
+| Delayed Orders % (order actually arrives late) | 23.12% | Dramatically highest — a **~9x** spread across all states |
+
+Seller lateness varies only modestly from state to state (roughly 5–12% everywhere). If AL's sellers were the root cause, its Delayed rate should track that same modest variation. It doesn't — which rules sellers out as the primary driver.
+
+### Quantifying the "unexplained" gap
+In every other state, Late Shipment % is *higher* than Delayed % — meaning Olist's logistics network typically absorbs and hides seller delays before the customer notices (e.g., SP: 9.32% late shipment → only 5.80% delayed). Applying that same absorption pattern to AL's own late-shipment rate (12.33%) would predict a Delayed rate of roughly **8–12%** — in line with RN, MS, and TO.
+
+Instead, AL's actual Delayed rate is **23.12%** — an excess of **≈ 11–15 percentage points that seller behavior cannot explain.**
+
+### What this means
+The failure point sits **after** the seller hands off the package — most likely a specific carrier or last-mile logistics partner struggling to operate in that state. This is reinforced by AL also carrying elevated freight costs relative to revenue and a below-average review score (3.77), consistent with a region where the delivery experience — not the product or the seller — is the weak link.
+
+### The business implication
+Every other lever this dashboard suggests (seller incentives, pricing, category focus) targets behavior Olist can influence through sellers or marketing. **AL requires a different kind of fix entirely: a logistics/carrier-partner audit specific to that state.** Pressuring AL's sellers to ship earlier — the intuitive first response — would not meaningfully move the Delayed Orders number, because the problem was never on the seller's side of the handoff.
+
+---
+
 ## 🛠️ Technical Details
 
 ### Data Model
@@ -364,6 +397,7 @@ Active Sellers = DISTINCTCOUNT(olist_order_items_dataset[seller_id])
 ## 👤 Author
 
 **Mohammed** — Data Analyst | Power BI & Excel
+
 
 ---
 
