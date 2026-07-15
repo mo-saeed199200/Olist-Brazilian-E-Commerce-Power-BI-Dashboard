@@ -298,7 +298,7 @@ Credit card AOV ($163) vs. voucher AOV ($66), while credit card is also the domi
 
 ---
 
-##💼 Business Recommendations
+### 💼 Business Recommendations
 
 Each recommendation follows the same structure: the data behind it, the specific action, the expected impact, and how to know if it worked.
 
